@@ -11,4 +11,4 @@ and  dispatching_base_num in ('B00987', 'B02060', 'B02279') ;
 
 CREATE OR REPLACE TABLE `zoomcamp-de-339322.trips_data_all.green_tripdata_PC` 
             PARTITION BY DATE(dropoff_datetime) 
-            CLUSTER BY dispatching_base_num  AS   SELECT * FROM `zoomcamp-de-339322.trips_data_all.green_tripdata` 
+            CLUSTER BY dispatching_base_num  AS   SELECT * FROM `zoomcamp-de-339322.trips_data_all.green_tripdata_external_table` 
